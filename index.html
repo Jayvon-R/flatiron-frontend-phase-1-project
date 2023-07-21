@@ -2,57 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase 1 Project</title>
+    <title>Pokémon Cards</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
 </head>
 <body>
-    <!-- header begins -->
     <header>
-    <h1 id="top">Phase 1 Project</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#section1">Section 1</a>
-            </li>
-            <li>
-                <a href="#section2">Section 2</a>
-            </li>
-            <li>
-                <a href="#section3">Section 3</a>
-            </li>
-        </ul>
-    </nav>
-    </header>
-    <!-- header ends -->
+        <h1>Pokémon Cards</h1>
+        <div class="filters">
+            <label for="type-filter">Filter by Type:</label>
+            <select id="type-filter">
+                <option value="0">All</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="fighting">Fighting</option>
+                <option value="poison">Poison</option>
+                <option value="ground">Ground</option>
+                <option value="flying">Flying</option>
+                <option value="psychic">Psychic</option>
+                <option value="bug">Bug</option>
+                <option value="rock">Rock</option>
+                <option value="ghost">Ghost</option>
+                <option value="dragon">Dragon</option>
+                <option value="dark">Dark</option>
+                <option value="steel">Steel</option>
+                <option value="fairy">Fairy</option>
+            </select>
+            <button id="filter-btn">Filter</button>
+            <button id="randomize-btn">Randomize</button>
+        </div>
 
-    <!-- main begins -->
-    <main>
-        <section id="section1"> 
-            <h2>Search 1</h2>
-            <img src="$" alt="some image">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia cumque vero error, at odit repellendus vel, amet dignissimos sit, quisquam ducimus soluta velit nihil iure deserunt consequuntur dolores rerum.</p>
-        </section>
-        <section id="section2"> 
-            <h2>Search 2</h2>
-            <img src="$" alt="some image">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia cumque vero error, at odit repellendus vel, amet dignissimos sit, quisquam ducimus soluta velit nihil iure deserunt consequuntur dolores rerum.</p>
-        </section>
-        <section id="section3"> 
-            <h2>Search 3</h2>
-            <img src="$" alt="some image">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia cumque vero error, at odit repellendus vel, amet dignissimos sit, quisquam ducimus soluta velit nihil iure deserunt consequuntur dolores rerum.</p>
-        </section>
-    </main>
-    <!-- main ends -->
-
-    <!-- footer begins -->
-    <footer>
-    <p>Copyright YOUR NAME 2023</p>
-    <a href="#top">Back to top</a>
-    </footer>
-    <!-- footer ends -->
-</body>
-</html>
