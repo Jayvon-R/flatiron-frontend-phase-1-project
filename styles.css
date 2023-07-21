@@ -1,3 +1,45 @@
 body {
-    background-color: rgb(214, 212, 212);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label,
+select {
+    margin-right: 8px;
+}
+
+
+.filters {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#filter-btn {
+    margin-left: 8px; 
+}
+
+#randomize-btn {
+    margin-left: 16px;
+}
+
