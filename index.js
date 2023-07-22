@@ -33,3 +33,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     displayPokemonCards(pokemonData);
 });
   
+  // Function to display Pokemon cards on the page
+function displayPokemonCards(pokemonList) {
+    const shuffledPokemonList = shuffleArray(pokemonList);
+    const limitedPokemonList = shuffledPokemonList.slice(0, 16);
+
+    const pokemonListContainer = document.querySelector('.pokemon-list');
+    pokemonListContainer.innerHTML = '';
+
+    limitedPokemonList.forEach(pokemon => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+            <div class="card-info">
+                <h3>${capitalizeFirstLetter(pokemon.name)}</h3>
+                <p>Type: ${pokemon.types.map(type => capitalizeFirstLetter(type.type.name)).join(', ')}</p>
+            </div>
+        `;
+        pokemonListContainer.appendChild(card);
+
+        card.addEventListener('click', () => {
+            displayModal(pokemon);
+        });
+    });
+}
+
