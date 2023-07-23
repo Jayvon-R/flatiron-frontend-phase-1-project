@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const pokemonData = await fetchPokemonData();
     displayPokemonCards(pokemonData);
 });
+
+// shuffleArray displays pokemon in a random order
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
   
   // Function to display Pokemon cards on the page
 function displayPokemonCards(pokemonList) {
@@ -59,3 +69,9 @@ function displayPokemonCards(pokemonList) {
     });
 }
 
+// Randomize button
+function randomizePokemonCards(pokemonList) {
+    const shuffledPokemonList = shuffleArray(pokemonList);
+    const limitedPokemonList = shuffledPokemonList.slice(0, 16);
+    displayPokemonCards(limitedPokemonList);
+}
