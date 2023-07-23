@@ -75,3 +75,9 @@ function randomizePokemonCards(pokemonList) {
     const limitedPokemonList = shuffledPokemonList.slice(0, 16);
     displayPokemonCards(limitedPokemonList);
 }
+// Event listener for the Randomize button click to display a new set of random Pokémon cards
+document.getElementById('randomize-btn').addEventListener('click', async () => {
+    const pokemonData = await fetchPokemonData();
+    randomizePokemonCards(pokemonData);
+});
+
