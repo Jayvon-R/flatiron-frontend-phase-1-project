@@ -103,4 +103,23 @@ function displayModal(pokemon) {
     const modalBaseStats = document.getElementById('modal-base-stats');
     const modalWeight = document.getElementById('modal-weight');
     const closeModal = document.getElementById('close-modal');
+
+    displayPokemonName(modalName, name);
+    displayPokemonImage(modalImage, image);
+    displayPokemonAbilities(modalAbilities, abilities);
+    displayPokemonStats(modalBaseStats, stats);
+    displayPokemonWeight(modalWeight, weight);
+
+    showModal(modal);
+
+    closeModal.onclick = function () {
+        hideModal(modal);
+    };
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            hideModal(modal);
+        }
+    };
 }
+
