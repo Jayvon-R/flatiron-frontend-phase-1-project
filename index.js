@@ -81,3 +81,9 @@ document.getElementById('randomize-btn').addEventListener('click', async () => {
     randomizePokemonCards(pokemonData);
 });
 
+
+// Capitalizes first letter of Pokemon names 
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
