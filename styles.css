@@ -83,3 +83,11 @@ button {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
 }
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
+}
