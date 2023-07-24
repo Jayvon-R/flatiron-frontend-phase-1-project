@@ -87,3 +87,20 @@ function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// Function to display the cards with more Pokemon info when clicked
+function displayModal(pokemon) {
+    const modal = document.getElementById('modal');
+    const {
+        name,
+        sprites: { front_default: image },
+        abilities,
+        stats,
+        weight
+    } = pokemon;
+    const modalName = document.getElementById('modal-name');
+    const modalImage = document.getElementById('modal-image');
+    const modalAbilities = document.getElementById('modal-abilities');
+    const modalBaseStats = document.getElementById('modal-base-stats');
+    const modalWeight = document.getElementById('modal-weight');
+    const closeModal = document.getElementById('close-modal');
+}
