@@ -91,3 +91,9 @@ button {
 .card:hover .card-info {
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .pokemon-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
