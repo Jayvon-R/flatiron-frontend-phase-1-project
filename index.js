@@ -126,3 +126,7 @@ function displayModal(pokemon) {
 function displayPokemonName(element, name) {
     element.textContent = capitalizeFirstLetter(name);
 }
+
+function displayPokemonImage(element, image) {
+    element.src = image;
+}
