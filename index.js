@@ -135,3 +135,8 @@ function displayPokemonAbilities(element, abilities) {
     const abilityNames = abilities.map(ability => capitalizeFirstLetter(ability.ability.name));
     element.textContent = abilityNames.join(', ');
 }
+
+function displayPokemonStats(element, stats) {
+    const statList = stats.map(stat => `<li><strong>${capitalizeFirstLetter(stat.stat.name)}:</strong> ${stat.base_stat}</li>`).join('');
+    element.innerHTML = statList;
+}
