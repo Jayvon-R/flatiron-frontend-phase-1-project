@@ -130,3 +130,8 @@ function displayPokemonName(element, name) {
 function displayPokemonImage(element, image) {
     element.src = image;
 }
+
+function displayPokemonAbilities(element, abilities) {
+    const abilityNames = abilities.map(ability => capitalizeFirstLetter(ability.ability.name));
+    element.textContent = abilityNames.join(', ');
+}
