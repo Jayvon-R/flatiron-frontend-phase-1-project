@@ -152,3 +152,19 @@ function showModal(modal) {
 function hideModal(modal) {
     modal.style.display = 'none';
 }
+
+// Event listener for the filter button click to filter Pokemon by type
+document.getElementById('filter-btn').addEventListener('click', async () => {
+    const selectedType = document.getElementById('type-filter').value;
+    const pokemonData = await fetchPokemonData();
+
+    let filteredPokemon = pokemonData;
+
+    if (selectedType !== '0') {
+        filteredPokemon = filteredPokemon.filter(pokemon => {
+            return pokemon.types.some(type => type.type.name === selectedType);
+        });
+    }
+
+    displayPokemonCards(filteredPokemon);
+});
