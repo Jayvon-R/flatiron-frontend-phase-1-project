@@ -143,3 +143,17 @@ button {
     border-radius: 8px;
     max-width: 80%;
 }
+
+.close-modal {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #555;
+}
