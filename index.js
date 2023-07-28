@@ -140,3 +140,7 @@ function displayPokemonStats(element, stats) {
     const statList = stats.map(stat => `<li><strong>${capitalizeFirstLetter(stat.stat.name)}:</strong> ${stat.base_stat}</li>`).join('');
     element.innerHTML = statList;
 }
+
+function displayPokemonWeight(element, weight) {
+    element.textContent = weight / 10 + ' kg';
+}
