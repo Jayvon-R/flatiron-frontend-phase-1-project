@@ -157,3 +157,21 @@ button {
 .close-modal:hover {
     color: #555;
 }
+
+.modal-content h2 {
+    margin-bottom: 8px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.modal-info h3 {
+    margin-top: 16px;
+}
+
+.modal-info p {
+    margin: 4px 0;
+}
