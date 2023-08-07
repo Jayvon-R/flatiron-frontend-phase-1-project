@@ -19,13 +19,21 @@ To run this project locally, follow these steps:
 3. Open the index.html file in your web browser.
 
 How to Use
+
 • On the main page, you'll find a header with the Pokémon logo, the page title, and filter buttons.
+
 • Use the filter dropdown to select a specific Pokémon type or choose "All" to show all Pokémon.
+
 • Click on the "Filter" button to apply the selected filter.
+
 • Click on the "Randomize" button to see a different set of • Pokémon cards in a random order.
+
 • Scroll down to view the Pokémon cards, each displaying an image, name, and type.
+
 • Click on any Pokémon card to view more information about that Pokémon in a modal.
+
 • The modal displays the Pokémon's name, image, abilities, base stats, and weight.
 
 License
+
 This project is licensed under the MIT License.
