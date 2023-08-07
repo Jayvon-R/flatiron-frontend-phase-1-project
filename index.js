@@ -1,8 +1,11 @@
 // This function fetches data for 807 Pokémon from the PokeAPI and returns an array with information about each Pokémon.
 async function fetchPokemonData() {
     try {
+        const loadingSpinner = document.getElementById('loading-spinner');
+        loadingSpinner.style.display = 'block'; // Show the loading spinner
+
+
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=807`);
-  
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -20,6 +23,9 @@ async function fetchPokemonData() {
         const pokemonInfo = await res.json();
         pokemonData.push(pokemonInfo);
       }
+      
+      loadingSpinner.style.display = 'none'; // Hide the loading spinner once the data is fetched
+
       return pokemonData;
     } catch (error) {
       console.error('Error fetching data:', error);
